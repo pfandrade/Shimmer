@@ -7,16 +7,15 @@
  of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import <UIKit/UIView.h>
 
 #import "FBShimmering.h"
 
 /**
   @abstract Lightweight, generic shimmering view.
  */
-@interface FBShimmeringView : UIView <FBShimmering>
+@interface FBShimmeringView : FBView <FBShimmering>
 
 //! @abstract The content view to be shimmered.
-@property (strong, nonatomic) UIView *contentView;
+@property (strong, nonatomic) FBView *contentView;
 
 @end

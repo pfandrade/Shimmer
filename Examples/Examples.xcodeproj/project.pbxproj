@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E44B4E31B8F1530008575A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E44B4E21B8F1530008575A3 /* AppDelegate.m */; };
+		7E44B4E51B8F1530008575A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E44B4E41B8F1530008575A3 /* main.m */; };
+		7E44B4E71B8F1530008575A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E44B4E61B8F1530008575A3 /* Images.xcassets */; };
+		7E44B4EA1B8F1530008575A3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E44B4E81B8F1530008575A3 /* MainMenu.xib */; };
+		7E44B50C1B8F25A6008575A3 /* FBShimmering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E44B50B1B8F25A6008575A3 /* FBShimmering.framework */; };
+		7E44B50E1B8F25B3008575A3 /* FBShimmering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E44B50D1B8F25B3008575A3 /* FBShimmering.framework */; };
+		7E44B50F1B8F25BD008575A3 /* FBShimmering.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E44B50B1B8F25A6008575A3 /* FBShimmering.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC45CACE18ADC7CE0063DD11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45CACD18ADC7CE0063DD11 /* Foundation.framework */; };
 		EC45CAD018ADC7CE0063DD11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45CACF18ADC7CE0063DD11 /* CoreGraphics.framework */; };
 		EC45CAD218ADC7CE0063DD11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45CAD118ADC7CE0063DD11 /* UIKit.framework */; };
@@ -20,7 +27,30 @@
 		EC45CB0418ADC7E80063DD11 /* libFBShimmering.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45CB0318ADC7E80063DD11 /* libFBShimmering.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7E44B4FF1B8F2116008575A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7E44B50F1B8F25BD008575A3 /* FBShimmering.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7E44B4DD1B8F1530008575A3 /* Logo-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Logo-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E44B4E01B8F1530008575A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E44B4E11B8F1530008575A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7E44B4E21B8F1530008575A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7E44B4E41B8F1530008575A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E44B4E61B8F1530008575A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7E44B4E91B8F1530008575A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7E44B4FD1B8F2109008575A3 /* FBShimmering.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBShimmering.framework; path = "../../../Library/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug-iphoneos/FBShimmering.framework"; sourceTree = "<group>"; };
+		7E44B50B1B8F25A6008575A3 /* FBShimmering.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBShimmering.framework; path = "../../../../Library/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug/FBShimmering.framework"; sourceTree = "<group>"; };
+		7E44B50D1B8F25B3008575A3 /* FBShimmering.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBShimmering.framework; path = "../../../../Library/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug-iphoneos/FBShimmering.framework"; sourceTree = "<group>"; };
 		EC45CACA18ADC7CE0063DD11 /* Logo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Logo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC45CACD18ADC7CE0063DD11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EC45CACF18ADC7CE0063DD11 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,6 +75,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E44B4DA1B8F1530008575A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E44B50C1B8F25A6008575A3 /* FBShimmering.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC45CAC718ADC7CE0063DD11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +90,7 @@
 				EC45CB0418ADC7E80063DD11 /* libFBShimmering.a in Frameworks */,
 				EC45CAD018ADC7CE0063DD11 /* CoreGraphics.framework in Frameworks */,
 				EC45CAD218ADC7CE0063DD11 /* UIKit.framework in Frameworks */,
+				7E44B50E1B8F25B3008575A3 /* FBShimmering.framework in Frameworks */,
 				EC45CACE18ADC7CE0063DD11 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,10 +98,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E44B4DE1B8F1530008575A3 /* Logo-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				7E44B50B1B8F25A6008575A3 /* FBShimmering.framework */,
+				7E44B4E11B8F1530008575A3 /* AppDelegate.h */,
+				7E44B4E21B8F1530008575A3 /* AppDelegate.m */,
+				7E44B4E61B8F1530008575A3 /* Images.xcassets */,
+				7E44B4E81B8F1530008575A3 /* MainMenu.xib */,
+				7E44B4DF1B8F1530008575A3 /* Supporting Files */,
+			);
+			path = "Logo-OSX";
+			sourceTree = "<group>";
+		};
+		7E44B4DF1B8F1530008575A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E44B4E01B8F1530008575A3 /* Info.plist */,
+				7E44B4E41B8F1530008575A3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		EC45CABF18ADC7920063DD11 = {
 			isa = PBXGroup;
 			children = (
 				ECC5761518ADEDFC00C2BFB8 /* Logo */,
+				7E44B4DE1B8F1530008575A3 /* Logo-OSX */,
 				EC45CACC18ADC7CE0063DD11 /* Frameworks */,
 				EC45CACB18ADC7CE0063DD11 /* Products */,
 			);
@@ -72,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				EC45CACA18ADC7CE0063DD11 /* Logo-iOS.app */,
+				7E44B4DD1B8F1530008575A3 /* Logo-OSX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +142,7 @@
 		EC45CACC18ADC7CE0063DD11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E44B4FD1B8F2109008575A3 /* FBShimmering.framework */,
 				EC45CB0318ADC7E80063DD11 /* libFBShimmering.a */,
 				EC45CACD18ADC7CE0063DD11 /* Foundation.framework */,
 				EC45CACF18ADC7CE0063DD11 /* CoreGraphics.framework */,
@@ -93,6 +157,7 @@
 		EC45CAD318ADC7CE0063DD11 /* Logo-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7E44B50D1B8F25B3008575A3 /* FBShimmering.framework */,
 				EC45CADC18ADC7CE0063DD11 /* AppDelegate.h */,
 				EC45CADD18ADC7CE0063DD11 /* AppDelegate.m */,
 				EC45CADF18ADC7CE0063DD11 /* Main_iPhone.storyboard */,
@@ -137,6 +202,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7E44B4DC1B8F1530008575A3 /* Logo-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E44B4FB1B8F1531008575A3 /* Build configuration list for PBXNativeTarget "Logo-OSX" */;
+			buildPhases = (
+				7E44B4D91B8F1530008575A3 /* Sources */,
+				7E44B4DA1B8F1530008575A3 /* Frameworks */,
+				7E44B4DB1B8F1530008575A3 /* Resources */,
+				7E44B4FF1B8F2116008575A3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Logo-OSX";
+			productName = "Logo-OSX";
+			productReference = 7E44B4DD1B8F1530008575A3 /* Logo-OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
 		EC45CAC918ADC7CE0063DD11 /* Logo-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC45CAFD18ADC7CE0063DD11 /* Build configuration list for PBXNativeTarget "Logo-iOS" */;
@@ -161,6 +244,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					7E44B4DC1B8F1530008575A3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
 			};
 			buildConfigurationList = EC45CAC318ADC7920063DD11 /* Build configuration list for PBXProject "Examples" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -176,11 +264,21 @@
 			projectRoot = "";
 			targets = (
 				EC45CAC918ADC7CE0063DD11 /* Logo-iOS */,
+				7E44B4DC1B8F1530008575A3 /* Logo-OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E44B4DB1B8F1530008575A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E44B4E71B8F1530008575A3 /* Images.xcassets in Resources */,
+				7E44B4EA1B8F1530008575A3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC45CAC818ADC7CE0063DD11 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +293,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E44B4D91B8F1530008575A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E44B4E51B8F1530008575A3 /* main.m in Sources */,
+				7E44B4E31B8F1530008575A3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC45CAC618ADC7CE0063DD11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,6 +315,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		7E44B4E81B8F1530008575A3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E44B4E91B8F1530008575A3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		EC45CAD618ADC7CE0063DD11 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -235,6 +350,104 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7E44B4F71B8F1531008575A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Logo-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7E44B4F81B8F1531008575A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Logo-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		EC45CAC418ADC7920063DD11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -271,6 +484,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug-iphoneos",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -326,6 +541,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/FBShimmering-dkiqthaohliqrkdyxexezawmwyxi/Build/Products/Debug-iphoneos",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -353,6 +570,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E44B4FB1B8F1531008575A3 /* Build configuration list for PBXNativeTarget "Logo-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E44B4F71B8F1531008575A3 /* Debug */,
+				7E44B4F81B8F1531008575A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		EC45CAC318ADC7920063DD11 /* Build configuration list for PBXProject "Examples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -10,6 +10,30 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <Foundation/Foundation.h>
 
+//! Project version number for FBShimmeringX.
+FOUNDATION_EXPORT double FBShimmeringVersionNumber;
+
+//! Project version string for FBShimmeringX.
+FOUNDATION_EXPORT const unsigned char FBShimmeringVersionString[];
+
+#if TARGET_OS_IPHONE
+
+#import <UIKit/UIKit.h>
+#define FBColor UIColor
+#define FBView UIView
+#define VALUE_WITH_POINT(XYPOINT) [NSValue valueWithCGPoint:XYPOINT]
+
+#else
+
+#import <Cocoa/Cocoa.h>
+#define FBColor NSColor
+#define FBView NSView
+#define VALUE_WITH_POINT(XYPOINT) [NSValue valueWithPoint:XYPOINT]
+
+#endif
+
+
+
 typedef NS_ENUM(NSInteger, FBShimmerDirection) {
     FBShimmerDirectionRight,    // Shimmer animation goes from left to right
     FBShimmerDirectionLeft,     // Shimmer animation goes from right to left
@@ -65,3 +89,6 @@ static const float FBShimmerDefaultBeginTime = CGFLOAT_MAX;
 
 @end
 
+
+#import <FBShimmering/FBShimmeringView.h>
+#import <FBShimmering/FBShimmeringLayer.h>

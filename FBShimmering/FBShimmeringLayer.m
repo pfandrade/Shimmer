@@ -13,8 +13,6 @@
 #import <QuartzCore/CAGradientLayer.h>
 #import <QuartzCore/CATransaction.h>
 
-#import <UIKit/UIGeometry.h>
-#import <UIKit/UIColor.h>
 
 #if !__has_feature(objc_arc)
 #error This file must be compiled with ARC. Convert your project to ARC or specify the -fobjc-arc flag.
@@ -62,7 +60,7 @@ static CABasicAnimation *fade_animation(CALayer *layer, CGFloat opacity, CFTimeI
 static CABasicAnimation *shimmer_slide_animation(CFTimeInterval duration, FBShimmerDirection direction)
 {
   CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
-  animation.toValue = [NSValue valueWithCGPoint:CGPointZero];
+  animation.toValue = VALUE_WITH_POINT(CGPointZero);
   animation.duration = duration;
   animation.repeatCount = HUGE_VALF;
   FBShimmeringLayerAnimationApplyDragCoefficient(animation);
@@ -102,7 +100,7 @@ static CAAnimation *shimmer_slide_finish(CAAnimation *a)
   self = [super init];
   if (nil != self) {
     _fadeLayer = [[CALayer alloc] init];
-    _fadeLayer.backgroundColor = [UIColor whiteColor].CGColor;
+    _fadeLayer.backgroundColor = [FBColor whiteColor].CGColor;
     [self addSublayer:_fadeLayer];
   }
   return self;
@@ -299,8 +297,8 @@ static CAAnimation *shimmer_slide_finish(CAAnimation *a)
 
   // We create a gradient to be used as a mask.
   // In a mask, the colors do not matter, it's the alpha that decides the degree of masking.
-  UIColor *maskedColor = [UIColor colorWithWhite:1.0 alpha:_shimmeringOpacity];
-  UIColor *unmaskedColor = [UIColor colorWithWhite:1.0 alpha:_shimmeringAnimationOpacity];
+  FBColor *maskedColor = [FBColor colorWithWhite:1.0 alpha:_shimmeringOpacity];
+  FBColor *unmaskedColor = [FBColor colorWithWhite:1.0 alpha:_shimmeringAnimationOpacity];
 
   // Create a gradient from masked to unmasked to masked.
   _maskLayer.colors = @[(__bridge id)maskedColor.CGColor, (__bridge id)unmaskedColor.CGColor, (__bridge id)maskedColor.CGColor];

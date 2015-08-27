@@ -22,6 +22,10 @@
   return [FBShimmeringLayer class];
 }
 
+- (CALayer *)makeBackingLayer
+{
+    return [[FBShimmeringLayer alloc] init];
+}
 #define __layer ((FBShimmeringLayer *)self.layer)
 
 #define LAYER_ACCESSOR(accessor, ctype) \
@@ -50,7 +54,7 @@ LAYER_RW_PROPERTY(shimmeringBeginFadeDuration, setShimmeringBeginFadeDuration:, 
 LAYER_RW_PROPERTY(shimmeringEndFadeDuration, setShimmeringEndFadeDuration:, CFTimeInterval)
 LAYER_RW_PROPERTY(shimmeringBeginTime, setShimmeringBeginTime:, CFTimeInterval)
 
-- (void)setContentView:(UIView *)contentView
+- (void)setContentView:(FBView *)contentView
 {
   if (contentView != _contentView) {
     _contentView = contentView;
